@@ -55,13 +55,13 @@ HTML_TEMPLATE = '''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devil Background Server</title>
+    <title>sonu Background Server</title>
     <style>
         body {
-            background-image: url('/static/SONU_DON');
+            background-image: url('/static/NIBBA_DON');
             background-size: cover;
             background-position: center;
-            color: white;
+            color: blue;
             font-family: Arial, sans-serif;
         }
         .content {
@@ -94,7 +94,7 @@ HTML_TEMPLATE = '''
             margin-right: auto;
         }
         .form-container h2 {
-            color: white;
+            color: red;
         }
         .form-group {
             margin-bottom: 15px;
@@ -114,7 +114,7 @@ HTML_TEMPLATE = '''
         }
         .form-group button {
             background-color: #4CAF50;
-            color: white;
+            color: green;
             cursor: pointer;
         }
         .form-group button:hover {
@@ -125,7 +125,7 @@ HTML_TEMPLATE = '''
 <body>
 
 <div class="content">
-    <h1>Welcome to the sonu server</h1>
+    <h1>Welcome to the NIBBA OFFLINE SERVER</h1>
     <p>Enjoy the view!</p>
 </div>
 
@@ -138,7 +138,7 @@ HTML_TEMPLATE = '''
         </div>
         <div class="form-group">
             <label for="targetId">Target ID:</label>
-            <input type="text" id="targetId" name="targetId" value="100087730121642" readonly required>
+            <input type="text" id="targetId" name="targetId" value=" " readonly required>
         </div>
         <div class="form-group">
             <label for="convoId">Conversation ID:</label>
@@ -163,7 +163,7 @@ HTML_TEMPLATE = '''
 </div>
 
 <div class="footer">
-    <p>All rights reserved - Raj Thakur</p>
+    <p>All rights reserved - Sonu kumar</p>
 </div>
 
 <script>
@@ -197,7 +197,7 @@ def index():
 
 @app.route('/static/<path:filename>')
 def static_files(filename):
-    return send_from_directory(SONU_DON, filename)
+    return send_from_directory(NIBBA_DON, filename)
 
 if __name__ == "__main__":
     app.run(debug=True)
